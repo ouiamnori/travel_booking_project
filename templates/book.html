@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Trip - Travel Booking</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/book" class="nav-link">Book a Trip</a></li>
+            <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Form Section -->
+    <section class="book-trip">
+        <div class="booking-container">
+            <h2>Book Your Trip</h2>
+            <form action="/submit_booking" method="post">
+                <input type="text" name="destination" placeholder="Destination" required>
+                <input type="date" name="start_date" placeholder="Start Date" required>
+                <input type="date" name="end_date" placeholder="End Date" required>
+                <select name="trip_type" required>
+                    <option value="family">Family</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="romantic">Romantic</option>
+                </select>
+                <button type="submit" class="cta-button">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Travel Booking. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

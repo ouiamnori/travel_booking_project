@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#book">Book a Trip</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Welcome to Travel Booking</h1>
+            <p>Plan your dream vacation with us</p>
+            <a href="#book" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We provide the best travel experiences, helping you book flights, hotels, and activities with ease.</p>
+    </section>
+
+    <!-- Book a Trip Section -->
+    <section class="book" id="book">
+        <h2>Book a Trip</h2>
+        <form action="#">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="Where do you want to go?" required>
+
+            <label for="dates">Travel Dates:</label>
+            <input type="date" id="dates" name="dates" required>
+
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Booking. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
